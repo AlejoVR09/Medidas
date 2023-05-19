@@ -17,6 +17,7 @@ body {
 h1,h2,h3 {
     text-align: center;
     padding: 1rem;
+    margin: 0 auto;
 }
 
 h1 {
@@ -42,32 +43,26 @@ p{
     margin: 3em auto;
     width: 40em;
     gap: 3em;
-    font-size: 2em;
-    
-    
-}
-
-.bgcontainer {
-    background-image: url(https://fondosmil.com/fondo/41359.jpg);
-    background-repeat: no-repeat;
+    font-size: 2em;   
 }
 
 .main_article {
     text-align: center;
-    flex-basis: 30rem;
     border-radius: 1.5em;
     border: 0.1em solid #555555;
-    color: #CCCCCC;
+    color: black;
     padding: 1em;
     margin: 1em;
 }
 
 .secondary_container {
     margin: 0 auto;
-    width: 60em;
+    width: 70em;
     font-size: 2em;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    justify-content: center;
 }
 
 .grid_son2 {
@@ -81,16 +76,15 @@ p{
     margin: 2em
 }
 
-img {
+.cait,.skills {
     width: 18em;
     object-fit: contain;
 }
 
 .large_article {
     margin: 2rem;
-    width: 70rem;
+    width: 75rem;
     height: 15rem;
-    background-color: aqua;
     display: flex;
 }
 
@@ -102,8 +96,52 @@ aside {
     text-align: center;
 }
 
+.aside_container{
+    text-align: center;
+    margin: 0 auto;
+}
+
 footer {
     font-size: 1.6rem;
     margin: 6rem;    
 }
 
+
+@media screen and (max-width:968px){
+    .main_container{
+        flex-basis: 30rem;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .main_article,.main_article{
+        width: 100%;
+    }
+
+
+    .secondary_container {
+        width: 100%;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 1fr;
+        
+    }
+    .large_article{
+        margin: 0 auto;
+        width: 50%;
+    }
+
+
+    .grid_son2 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .cait {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .skills {
+        width: 6.8rem;
+    }
+}
