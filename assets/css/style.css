@@ -1,9 +1,15 @@
 html {
     font-size: 62.5%;
+    font-family: 'Krub', sans-serif;
 }
 
 body {
     font-size: 1rem;
+    
+}
+
+main {
+    
 }
 
 * {
@@ -19,6 +25,7 @@ h1,h2,h3 {
 
 h1 {
     font-size: 5rem;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -29,6 +36,10 @@ h3 {
     font-size: 3rem;
 }
 
+p{
+    margin-bottom:1rem ;
+}
+
 .main_container {
     display: flex;
     justify-content: center;
@@ -36,13 +47,27 @@ h3 {
     width: 40em;
     gap: 4rem;
     font-size: 2em;
+    
+    
+}
+
+.bgcontainer {
+    background-image: url(https://fondosmil.com/fondo/41359.jpg);
+    background-repeat: no-repeat;
 }
 
 .main_article {
     text-align: center;
+    flex-basis: 30rem;
+    border-radius: 3rem;
+    border: 2px solid black;
+    color: #CCCCCC;
+    padding: 2rem;
+    margin: 2rem;
 }
 
 .secondary_container {
+    margin: 0 auto;
     width: 60em;
     font-size: 2em;
     display: grid;
@@ -57,22 +82,27 @@ h3 {
     width: 20em;
     height: 30em;
     text-align: center;
+    margin: 2rem
 }
 
 img {
     width: 100%;
+    object-fit: contain;
 }
 
 .large_article {
+    margin: 2rem;
     width: 70rem;
     height: 15rem;
     background-color: aqua;
+    display: flex;
 }
 
 aside {
+    margin: 2rem;
     display: inline-block;
-    width: 35rem;
+    width: 30rem;
     height: 15rem;
-    background-color: aqua;
+    text-align: center;
 }
 
